@@ -30,6 +30,29 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
+nav {
+  padding: 20px 0;
+}
+nav li {
+  display: inline;
+  line-height: 42px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #272142;
+  margin-left: 15px;
+}
+nav li a:hover,
+nav li a.active {
+  transition: all 100ms ease-in-out;
+  color: var(--branding-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 .hero {
   background: var(--secondary-color);
   text-align: center;
@@ -93,6 +116,9 @@ p {
 }
 .content {
   margin: 30px;
+}
+.logo {
+  max-height: 40px;
 }
 
 @media (max-width: 960px) {
